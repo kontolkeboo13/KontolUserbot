@@ -30,11 +30,11 @@ from . import *
 async def pingme(client: Client, message: Message):
     if tgbot:
         try:
-            xnxx = await message.reply("<b>✧</b>")
-            await xnxx.edit("<b>✧✧</b>")
-            await xnxx.edit("<b>✧✧✧</b>")
-            await xnxx.edit("<b>✧✧✧✧</b>")
-            await xnxx.edit("<b>✧✧✧✧✧</b>")
+            xnxx = await message.reply("<b>🐣</b>")
+            await xnxx.edit("<b>🐣🐣</b>")
+            await xnxx.edit("<b>🐣🐣🐣</b>")
+            await xnxx.edit("<b>🐣🐣🐣🐣</b>")
+            await xnxx.edit("<b>🐣🐣🐣🐣🐣</b>")
             tgbot.me = await tgbot.get_me()
             results = await client.get_inline_bot_results(tgbot.me.username, f"ping")
             await message.reply_inline_bot_result(
