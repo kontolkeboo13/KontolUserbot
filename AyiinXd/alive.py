@@ -57,16 +57,16 @@ async def aliveme(client: Client, message: Message):
         chat_id = message.chat.id
         user = await client.get_me()
         output = (
-            f"**Tʜᴇ [Ayiin Ubot](https://github.com/AyiinXd/AyiinUbot)**\n\n"
+            f"**the Kontol userbot (https://github.com)**\n\n"
             f"**{var.ALIVE_TEXT}**\n\n"
             f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
-            f"≽ **Bᴀsᴇ Oɴ :** •[{adB.name}]•\n"
-            f"≽ **Oᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id}) \n"
-            f"≽ **Mᴏᴅᴜʟᴇs :** `{len(CMD_HELP)} Modules` \n"
-            f"≽ **Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{python_version()}`\n"
-            f"≽ **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :** `{fip_ver}`\n"
-            f"≽ **Pʏ-Aʏɪɪɴ Vᴇʀsɪᴏɴ :** `{__version__}`\n"
-            f"≽ **Aʏɪɪɴ Vᴇʀsɪᴏɴ :** `{ayiin_ver}` [{HOSTED_ON}]\n"
+            f"≽ **base on :** •[{adB.name}]•\n"
+            f"≽ **owner :** [{user.first_name}](tg://user?id={user.id}) \n"
+            f"≽ **module :** `{len(CMD_HELP)} Modules` \n"
+            f"≽ **pyton version :** `{python_version()}`\n"
+            f"≽ **pyrogram version :** `{fip_ver}`\n"
+            f"≽ **py-kontol version :** `{__version__}`\n"
+            f"≽ **kontol version :** `{ayiin_ver}` [{HOSTED_ON}]\n"
             "╰✠╼━━━━━━━━━━━━━━━✠╯\n\n"
         )
         await message.delete()
