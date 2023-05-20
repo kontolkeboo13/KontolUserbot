@@ -45,7 +45,7 @@ async def pmpermit_func(client: Client, message: Message):
     if user_.is_verified:
         return
     if user_.is_scam:
-        await message.reply_text("Scammer Tidak Diterima di PM Tuan Saya!")
+        await message.reply_text("Jamet Tidak Diterima di PM Tuan Saya!")
         await client.block_user(user_.id)
         return
     if user_.is_support:
