@@ -131,7 +131,7 @@ async def update_callback(_, cb: CallbackQuery):
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
             await cb.edit_message_text(
-            "<i>AyiinUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>"
+            "<i>KontolUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>"
             )
             remote.push(refspec=f"HEAD:refs/heads/{ac_br}", force=True)
         except GitCommandError as error:
@@ -142,7 +142,7 @@ async def update_callback(_, cb: CallbackQuery):
             pass
         try:
             await cb.edit_message_text(
-            "<i>AyiinUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>"
+            "<i>KontolUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>"
             )
         except:
             pass
@@ -154,7 +154,7 @@ async def update_callback(_, cb: CallbackQuery):
         await yins.install_requirements()
         try:
             await cb.edit_message_text(
-            "<i>AyiinUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>",
+            "<i>KontolUbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.</i>",
             )
         except:
             pass
