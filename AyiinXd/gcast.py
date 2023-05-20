@@ -23,7 +23,7 @@ from . import yins
 @Ayiin(["fgcast", "fw_cast"])
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message:
-        AyiinXD = await message.reply("<code>Started global broadcast...</code>")
+        AyiinXD = await message.reply("<code>Sedang memulai broadcast...</code>")
     else:
         return await message.edit_text("<b>Berikan Sebuah Pesan atau Reply</b>")
     x = message.reply_to_message.id
@@ -50,16 +50,16 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await AyiinXD.edit_text(
-        f"<b>Berhasil Menyebarkan Gosip Terusan...\n\nBerhasil Ke</b> <code>{done}</code> <b>Grup\nGagal Ke</b> <code>{error}</code> <b>Grup</b>"
+        f"<b>☑️Berhasil mengirim ke...\n\nBerhasil ☑️ Ke</b> <code>{done}</code> <b>Grup\nGagal ❌ Ke</b> <code>{error}</code> <b>Grup</b>"
     )
 
 
-@Ayiin(["gcast", "broadcast"])
+@Ayiin(["gikes", "broadcast"])
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message:
-        AyiinXD = await eor(message, "<code>Started global broadcast...</code>")
+        AyiinXD = await eor(message, "<code>Sedang memulai broadcast...</code>")
     else:
-        return await message.edit_text("<b>Balas Ke Pesan Untuk Menyebarkan Gosipan Anda</b>")
+        return await message.edit_text("<b>Berikan sebuah pesan atau reply </b>")
     x = message.reply_to_message.id
     y = message.chat.id
     done = 0
@@ -84,14 +84,14 @@ async def gcast_cmd(client: Client, message: Message):
                 except BaseException:
                     error += 1
     await AyiinXD.edit_text(
-        f"<b>Status Penyebaran Gosip...\n\nBerhasil Ke</b> <code>{done}</code> <b>Grup\nGagal Ke</b> <code>{error}</code> <b>Grup</b>"
+        f"<b☑️>berhasil mengirim ke...\nBerhasil Ke</b> <code>{done}</code> <b>Grup\nGagal ❌ Ke</b> <code>{error}</code> <b>Grup</b>"
     )
 
 
 @Ayiin(["gucast"])
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or yins.get_cmd(message):
-        XD = await eor(message, "<code>Started global broadcast...</code>")
+        XD = await eor(message, "<code>Sedang memulai broadcast...</code>")
     else:
         return await message.edit_text("<b>Berikan Sebuah Pesan atau Reply</b>")
     done = 0
@@ -115,16 +115,16 @@ async def gucast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await XD.edit_text(
-        f"<b>Berhasil Mengirim Pesan Ke</b> <code>{done}</code> <b>chat, Gagal Mengirim Pesan Ke</b> <code>{error}</code> <b>chat</b>"
+        f"<b>B☑️erhasil Mengirim Pesan Ke</b> <code>{done}</code> <b>chat,❌ Gagal Mengirim Pesan Ke</b> <code>{error}</code> <b>chat</b>"
     )
 
 
 CMD_HELP.update(
-    {"gcast": (
-        "gcast",
+    {"gikes": (
+        "gikes",
         {
             "fgcast <reply>": "Forward Broadcast messages in group chats.",
-            "gcast <reply>": "Broadcast messages in group chats.",
+            "gikes <reply>": "Broadcast messages in group chats.",
             "gucast <reply>": "Broadcast messages in user.",
         }
     )
